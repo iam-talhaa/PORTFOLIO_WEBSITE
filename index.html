@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://kit.fontawesome.com/01c6b75439.js" crossorigin="anonymous"></script>
 </head>
 
 
@@ -25,8 +25,146 @@
                 </ul>
         
             </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi,  i am  <span>Muhammad Talha</span> <br> Flutter Developer</h1>
+            </div>
         </div>
 
     </div>
+
+<!------------ABOUT--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="images/2nd.png" ></div>
+                <div class="about-col-2">
+                    <h1 class="Sub-title">About ME</h1>
+                    <p>
+                        About
+                        I am Muhammad Talha and I am Currently studying in Software Engineering at City university of science and technology Peshawer. I am working as a Flutter Frontend Developer. I design many apps in the flutter that is fully responsive for the android, IOS users.
+                    </p>
+                    <div class ="tab-titles">
+
+                        <p class ="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class ="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class ="tab-links"onclick="opentab('education')">Education</p>
+
+
+                    </div>
+<div class="tab-contents active-tab" id="Skills">
+<ul>
+    <li><span>FLUTTER FRAME WORK</span><br> Andriod/ios Development</li>
+    <li><span>WEB Development</span><br>HTML/CSS/JAVASCRIPT </li>
+    <li><span>Networking</span><br>Cisco Packet course</li>
+    
+
+
+</ul>
+
+</div>
+
+<div class="tab-contents" id="experience">
+    <ul>
+        <li><span>FLUTTER FRAME WORK</span><br> App Development</li>
+        <li><span>WEB Development</span><br><Web-App></Web-App> Development</li>
+        <li><span>C++ LANGUAGE</span><br>Advance DSA</li>
+        
+    
+    
+    </ul>
+    
+    </div>    
+    
+<div class="tab-contents" id="education">
+    <ul>
+        <li><span>2022</span><br>bs - Software Engineering from City University Peshawer</li>
+        <li><span>2020-2022</span><br>FSC - Concordia College Peshawer</li>
+        <li><span>2020</span><br>Matric - Ghazi Model School </li>
+        
+    
+    
+    </ul>
+    
+    </div>              
+
+            
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- ------------Services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="Sub-title"> MY SERVICES</h1>
+            <div class="services-list">
+
+                <div>
+                    
+ 
+
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                    <h2>
+                        FLUTTER DEVELOPMENT
+                    </h2>
+             <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit sequi necessitatibus numquam vel sunt amet animi nulla quos mollitia reprehenderit ipsa quo molestias deleniti rem laboriosam incidunt delectus eum iure, harum pariatur laudantium exercitationem. Nam porro voluptates earum dolorem mollitia minima debitis quo aspernatur ducimus perspiciatis at officiis obcaecati fuga, iure odit quod inventore voluptatum enim quis quibusdam. Possimus, accusamus nihil. Dignissimos sed natus voluptas quo officia nisi enim aliquid aspernatur nulla eius, dicta consectetur accusamus reprehenderit assumenda laudantium deleniti tempora doloribus dolor magni corrupti facere dolore modi sunt adipisci? Expedita assumenda temporibus, quisquam nesciunt ex ab ratione a nulla!
+    
+             </p>
+             <a href="#">Learn more</a>
+                    </div>
+                    
+                    <div>
+                  
+ 
+                   <i class="fa-solid fa-crop"></i>
+                    <h2>
+                        WEB DEVELOPMENT
+                    </h2>
+             <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit sequi necessitatibus numquam vel sunt amet animi nulla quos mollitia reprehenderit ipsa quo molestias deleniti rem laboriosam incidunt delectus eum iure, harum pariatur laudantium exercitationem. Nam porro voluptates earum dolorem mollitia minima debitis quo aspernatur ducimus perspiciatis at officiis obcaecati fuga, iure odit quod inventore voluptatum enim quis quibusdam. Possimus, accusamus nihil. Dignissimos sed natus voluptas quo officia nisi enim aliquid aspernatur nulla eius, dicta consectetur accusamus reprehenderit assumenda laudantium deleniti tempora doloribus dolor magni corrupti facere dolore modi sunt adipisci? Expedita assumenda temporibus, quisquam nesciunt ex ab ratione a nulla!
+    
+             </p>
+             <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>
+                        Networking
+                    </h2>
+             <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit sequi necessitatibus numquam vel sunt amet animi nulla quos mollitia reprehenderit ipsa quo molestias deleniti rem laboriosam incidunt delectus eum iure, harum pariatur laudantium exercitationem. Nam porro voluptates earum dolorem mollitia minima debitis quo aspernatur ducimus perspiciatis at officiis obcaecati fuga, iure odit quod inventore voluptatum enim quis quibusdam. Possimus, accusamus nihil. Dignissimos sed natus voluptas quo officia nisi enim aliquid aspernatur nulla eius, dicta consectetur accusamus reprehenderit assumenda laudantium deleniti tempora doloribus dolor magni corrupti facere dolore modi sunt adipisci? Expedita assumenda temporibus, quisquam nesciunt ex ab ratione a nulla!
+    
+             </p>
+             <a href="#">Learn more</a>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks =document.getElementsByClassName("tab-link");
+        var tabcontent =document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){ 
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+       
+    </script>
 </body>
 </html>
