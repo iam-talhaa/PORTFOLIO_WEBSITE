@@ -324,6 +324,9 @@ height: 60px;
    top: 20;
    transition: all;
    background-color: #ababab;
+   align-items: center;
+   size: 60;
+   
    
 
 }
