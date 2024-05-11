@@ -320,8 +320,10 @@ height: 60px;
 
    text-align: center;
    border-radius: 50%;
-   color: #ff004f;
+   color: hsl(341, 100%, 50%);
    top: 20;
+   transition: all;
+   background-color: #ababab;
    
 
 }
