@@ -282,16 +282,18 @@ transition: background 0.5s, transform 0.5s;
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5;
 }
 
 .layer{
-    height: 100%;
-    width: 100%;background: linear-gradient(rgba(0,0,0,0.6,#ff004f));
+    height: 0%;
+    width:100%;
+    background : linear-gradient(rgba(0,0,0,0.6,#ff004f));
     border-radius: 10px;
     position: absolute;
     left: 0;
     bottom: 0;
-    overflow: hidden;
+    overflow: hidden; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,6 +301,7 @@ transition: background 0.5s, transform 0.5s;
     padding: 0 40px;
     text-align: center;
     font-size: 14px;
+    transition: height 0.5s;
 
 }
 
@@ -314,19 +317,45 @@ transition: background 0.5s, transform 0.5s;
    font-size: 18px;
    line-height: 60px;
    background: #fff;
-height: 60px;
-
+   height: 60px;
    width: 60px;
-
    text-align: center;
    border-radius: 50%;
-   color: hsl(341, 100%, 50%);
-   top: 20;
-   transition: all;
-   background-color: #ababab;
-   align-items: center;
-   size: 60;
    
    
+   
+
+}
+
+
+.work:hover img{
+    
+    transform: scale(1.1);
+
+}
+
+.work:hover.layer{
+    height: 100%;
+     
+
+}
+
+.btn{
+ display: block;
+ margin: 50px auto;
+ width:  fit-content;
+ border: 1px solid #ff004f;
+ padding: 14px 50px;
+ border-radius:  6px;
+ text-decoration:  none;
+ color: #fff;
+ transition: background 0.s;
+
+
+
+}
+
+.btn:hover{
+    background: #ff004f;
 
 }
